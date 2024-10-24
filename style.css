@@ -129,7 +129,7 @@ footer p {
     animation: buttons 10s infinite;
 }
 
-@media (max-width:715px) {
+@media (max-width:700px) {
 
 .main_div {
     display: flex;
@@ -174,7 +174,7 @@ footer p {
 
 
 
-@media (max-width:560px) {
+@media (max-width:570px) {
 .main_div {
     display: flex;
     flex-direction: column;
@@ -204,15 +204,12 @@ footer p {
         width: 90%;
     }
 
-    .nav a:first-of-type {
-        background: linear-gradient(white,rgb(2, 63, 2));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
     .nav a:nth-child(2) {
         background: linear-gradient(white,rgb(2, 63, 2));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent; 
+    }
+    .content h1 {
+        color: black;
     }
 }

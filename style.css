@@ -98,6 +98,7 @@ a:active {
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 1;
+    
 }
 
 .questions {
@@ -129,7 +130,7 @@ footer p {
     animation: buttons 10s infinite;
 }
 
-@media (max-width:700px) {
+@media (max-width:700px) and (min-width:560px) {
 
 .main_div {
     display: flex;
@@ -174,7 +175,7 @@ footer p {
 
 
 
-@media (max-width:570px) {
+@media (max-width:560px) and (min-width:270px) {
 .main_div {
     display: flex;
     flex-direction: column;
@@ -209,7 +210,66 @@ footer p {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent; 
     }
+
+    .nav a:first-of-type {
+        background: linear-gradient(white,rgb(2, 63, 2));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
     .content h1 {
         color: black;
     }
+}
+
+
+@media (max-width:270px) {
+    .main_div {
+        display: flex;
+        flex-direction: column;
+    }
+    .nav {
+        width: 80%;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 1;
+        }
+        
+        .content {
+
+        width: 80%;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 1;
+        }
+        
+        .questions {
+            width: 100%;
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 1;
+        }
+    
+        footer p {
+            width: 90%;
+        }
+    
+        .nav a {
+            background: linear-gradient(white,rgb(2, 63, 2));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; 
+        }
+        .content h1 {
+            font-size:35px;
+            color: black;
+        }   
+
+        header h1 {
+            font-size:35px;
+        }
+
+        * {
+            margin-left:auto;
+            margin-right: auto;
+        }
 }
